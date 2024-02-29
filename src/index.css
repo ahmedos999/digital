@@ -1,13 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Teko&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+/* colors F7F7F7 EEEEEE 393E46 929AAB */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px;
+  background-color: #F7F7F7;
+}
+a{
+  text-decoration: none;
+  color: #929AAB;
+}
+a:hover{
+  color:#393E46
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #00FFCA; */
+}
+.logo{
+  color: #393E46;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 1.5px;
+}
+span{
+  color: #929AAB;
+}
+.navlist{
+  color: #929AAB;
+  padding: 0 45px;
+  font-weight: bold;
+}
+.navlist>ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.navlist>ul>li{
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.navlist>ul{
+  width: max-content;
+}
+.logo{
+  text-align: center;
+  line-height: 2px;
+}
+
+.main{
+  margin:0 -20px;
+  /* background-color: #393E46; */
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  padding: 10px;
+  color: #F7F7F7;
+
+  /* colors F7F7F7 F7F7F7 393E46 929AAB */
+  background: linear-gradient(-45deg, #0f0f0f, #2c2c2c, #585b5d, #0f0f0f);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+.title{
+  font-size: 3.8em;
+  font-weight: bold;
+}
+.bref{
+  /* align-self: flex-end; */
+  font-size: 1.8em;
+  margin-top: 25%;
+}
+
+
+@keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+.Services{
+  color:#F7F7F7 ;
+  background-color: #393E46;
+  margin: 50px -20px 0;
+  height: 50vh;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Teko';
+}
+.Project{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 3rem;
+  height: 50vh;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Teko';
+}
+.About{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 3rem;
+  height: 50vh;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Teko';
+}
+.footer{
+  color:#F7F7F7 ;
+  background-color: #393E46;
+  margin: 50px -20px -20px;
+  height: 20vh;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Teko';
 }
